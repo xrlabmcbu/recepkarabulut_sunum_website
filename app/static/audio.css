@@ -1,0 +1,63 @@
+/* styles.css */
+
+/* Genel sayfa stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Başlıklar */
+h1 {
+    color: #d35400; /* Turuncu */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2980b9; /* Mavi */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Ses oynatıcı */
+audio {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #3498db; /* Mavi çerçeve */
+    border-radius: 8px;
+}
+
+/* Audio dosyası yok mesajı */
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #7f8c8d; /* Gri tonlar */
+}
+
+/* Yüklenen dosyanın çıktılarını içeren başlıklar */
+#output-section h1 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #8e44ad; /* Mor */
+    text-align: center;
+}
+
+/* Küçük ekranlar için duyarlı tasarım */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    audio {
+        width: 100%;
+    }
+}

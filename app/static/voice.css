@@ -1,0 +1,103 @@
+/* style.css */
+
+/* Genel sayfa stili */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf0f1; /* Açık gri */
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50; /* Koyu mavi tonları */
+}
+
+/* Konteyner */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7; /* Beyaza yakın gri */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Başlıklar */
+h1 {
+    text-align: center;
+    color: #c0392b; /* Kırmızı */
+    margin-bottom: 20px;
+}
+
+/* Form stili */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #dfe6e9; /* Çok açık mavi-gri */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elemanları */
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e; /* Koyu gri-mavi */
+}
+
+form input[type="file"],
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #95a5a6; /* Gri ton */
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #ffffff; /* Beyaz */
+    color: #2c3e50; /* Koyu mavi tonları */
+}
+
+/* Buton stili */
+button {
+    display: block;
+    width: 100%;
+    background-color: #27ae60; /* Yeşil */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2ecc71; /* Açık yeşil */
+}
+
+/* Küçük ekranlar için duyarlı tasarım */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}

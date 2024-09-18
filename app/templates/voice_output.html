@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'audio.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Audio File</title>
+</head>
+<body>
+    <h1>Yüklenen dosyanın çıktıları</h1>
+    {% if audio %}
+        <h2>{{ audio.name }}</h2>
+        <audio controls>
+            <source src="{{ audio.audio.url }}" type="audio/mpeg">
+            <source src="{{ audio.audio.url }}" type="audio/ogg">
+            
+            Your browser does not support the audio element.
+        </audio>
+    {% else %}
+        <p>No audio files uploaded yet.</p>
+    {% endif %}
+    <h1>{{ ses }}</h1>
+    <h1>{{ duygu }}</h1>
+</body>
+</html>

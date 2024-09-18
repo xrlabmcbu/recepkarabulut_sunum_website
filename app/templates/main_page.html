@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hoş Geldiniz</h1>
+        <div class="buttons">
+            <button onclick="location.href='{% url 'mobese' %}'" type="button">Mobese Projesi</button>
+            <button onclick="location.href='{% url 'voice' %}'" type="button">Ses Verisi ile Duygu Analizi ve Kişi Tespiti Projesi</button>
+        </div>
+    </div>
+</body>
+</html>
